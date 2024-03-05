@@ -1,7 +1,7 @@
 from flask import Flask
 import pandas as pd
 
-print("Hello")
+# print("Hello")
 
 app = Flask(__name__)
 
@@ -10,5 +10,5 @@ def hello():
     return "Hello"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, host='0.0.0.0')
 
