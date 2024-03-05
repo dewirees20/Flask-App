@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Flask App</title>
+    <style>
+        /* Custom styles for the page */
+        body {
+            background-color: black;
+            color: green;
+            font-family: Arial, sans-serif;
+        }
+        .toolbar {
+            background-color: green;
+            padding: 10px;
+        }
+        .toolbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div class="toolbar">
+        <a href="/">Home</a>
+        <a href="/users">Users</a>
+        <a href="/about">About</a>
+    </div>
     <h1>Welcome to My Flask App</h1>
-    <p>This is a sample template.</p>
+    <p>This is a sample template with a custom color scheme and navigation toolbar.</p>
 </body>
 </html>
