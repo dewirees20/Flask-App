@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.burger-menu').classList.toggle('open');
+        });
+    </script>
+</head>
+<body>
+    <!-- Burger menu -->
+    <div class="burger-menu">
+        <div class="menu-icon"></div>
+        <div class="menu-options">
+            <a href="/">Home</a>
+            <a href="/users">Users</a>
+            <a href="/about">About</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Hello, Flask!</h1>
+        <p>This is a sample template.</p>
+    </div>
+</body>
+</html>
